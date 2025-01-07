@@ -4,10 +4,10 @@
 
 name: MLS
 channels:
-  - anaconda
   - conda-forge   # needed for jupyterlab, jupyter_contrib_nbextensions, emcee
+  - defaults
 dependencies:
-  - python=3.8    # conda default as of Apr 2021
+  - python=3.12    # conda default as of Apr 2021
   - pip           # ensures that any pip installs only modify this env
   - ipython
   - jupyter
@@ -25,3 +25,6 @@ dependencies:
   - libiconv       # needed by jupyter_contrib_nbextensions on some platforms
   - jupyter_contrib_nbextensions
   - emcee
+  - pytorch
+  - torchaudio
+  - torchvision
